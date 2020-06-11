@@ -12,7 +12,7 @@ const routes: Routes = [
     path: 'Cars', loadChildren: () => import('./cars/cars.module').then(m => m.CarsModule) 
   },
   {
-     path: 'CarDetails', loadChildren: () => import('./car-details/car-details.module').then(m => m.CarDetailsModule) 
+     path: 'CarDetails/:car', loadChildren: () => import('./car-details/car-details.module').then(m => m.CarDetailsModule) 
   },
   { path: 'erreur', loadChildren: () => import('./erreur/erreur.module').then(m => m.ErreurModule) },
   {
