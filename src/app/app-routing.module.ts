@@ -8,7 +8,6 @@ const routes: Routes = [
     path: "",
     loadChildren: () => import('./cars/cars.module').then(m => m.CarsModule) 
   },
-  
   { 
     path: 'Cars', loadChildren: () => import('./cars/cars.module').then(m => m.CarsModule) 
   },
